@@ -1,0 +1,53 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": [
+    "json",
+    "vue"
+  ],
+  "extends": [
+    "plugin:vue/recommended",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "array-bracket-newline": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "block-spacing": "error",
+    "no-debugger": "off",
+    "no-console": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "complexity": [
+      "error",
+      {
+        "max": 7
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ]
+  }
+}
